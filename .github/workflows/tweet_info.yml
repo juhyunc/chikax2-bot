@@ -1,4 +1,4 @@
-name: Post tweet
+name: Post information tweet
 
 on:
   schedule:

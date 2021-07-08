@@ -2,7 +2,7 @@ name: Post main tweet
 
 on:
   schedule:
-  - cron: "55 0,4,10,16,23 * * *"
+  - cron: "10 0,10,13,16,23 * * *"
 
 jobs:
   run:
@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt        
     - name: Tweet
       env:
-        GITHUB_ACCESS_KEY: ${{ secrets.MY_GITHUB_ACCESS_KEY }}
+        MY_GITHUB_ACCESS_KEY: ${{ secrets.MY_GITHUB_ACCESS_KEY }}
         TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
         TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
         TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}

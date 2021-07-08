@@ -1,6 +1,6 @@
 import random
 import config
-import tweet
+import tweet_write as tweet
 
 
 def main():
